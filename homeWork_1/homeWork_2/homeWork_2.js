@@ -13,14 +13,9 @@ let sum = 0;
 if(N>M){//проверяем не больше ли первое чило второго числа
     alert('the first number bigger than the second number');
     }
+    const typeNumber = confirm('even numbers skip?')//пропускаем ли четные числа
 
-
-
-/*if(N==NaN || M==NaN){
-    alert('this is non number')
-}
-const typeNumber = confirm('even numbers skip?')//пропускаем ли четные числа
-if(typeNumber){
+if(typeNumber===true){
     for(let i=N; i<M; i++){
         while(i%2!==0){
             sum+=i;
@@ -33,7 +28,7 @@ else{
         sum+=i;
     }
     alert(sum);
-}*/
+}
 
 
 
