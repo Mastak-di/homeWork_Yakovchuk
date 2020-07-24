@@ -14,21 +14,21 @@ else if(N>M){//проверяем не больше ли первое чило �
     alert('the first number bigger than the second number');
     }
     else{
-        const typeNumber = confirm('even numbers skip?')//пропускаем ли четные числа
+        const typeNumber = confirm('even numbers skip?')//спрашиваем пропускаем ли четные числа
         if(typeNumber===true){
             for(let i=N; i<M; i++){
                 if(i%2){
                     sum+=i;
                 }
             }
-        alert('you want know sum of the numbers? Click ok');
+        alert('you want know sum of the numbers? Click ok');//вывод суммы без четных чисел
         alert(sum);
         }
         else{
             for(let i=N; i<M; i++){
                 sum+=i; 
             }
-            alert('you want know sum of the numbers? Click ok');
+            alert('you want know sum of the numbers? Click ok');//вывод суммы всех чисел
             alert(sum);
         }
     }
