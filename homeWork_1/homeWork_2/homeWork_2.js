@@ -5,8 +5,10 @@ while(N!=Number&&M!=Number){
 alert('Hello, take two numbers from 1 to 99. The first number must be less than the second number');
 N = +prompt('enter the first number');//ввод первого числа
 M = +prompt('enter the second number');//ввод второго числа
-console.log('answer:', N);
-console.log('answer:', M);
+let resultN = parseInt(N);
+let resultM = parseInt(M);
+console.log('answer:', resultN);
+console.log('answer:', resultM);
 if(isNaN(N)===true){//проверка, является ли первое число числом
     alert('the first value is not number'); 
 }
@@ -19,7 +21,7 @@ else if(N>M){//проверяем не больше ли первое чило �
     else{
         const typeNumber = confirm('even numbers skip?')//спрашиваем пропускаем ли четные числа
         if(typeNumber===true){
-            for(let i=N; i<M; i++){
+            for(let i=resultN; i<resultM; i++){
                 if(i%2){
                     sum+=i;
                 }
@@ -28,7 +30,7 @@ else if(N>M){//проверяем не больше ли первое чило �
         alert(sum);
         }
         else{
-            for(let i=N; i<M; i++){
+            for(let i=resultN; i<resultM; i++){
                sum+=i;    
             }
             alert('you want know sum of the numbers? Click ok');//вывод суммы всех чисел
@@ -36,4 +38,3 @@ else if(N>M){//проверяем не больше ли первое чило �
         }
     }
 }
-
