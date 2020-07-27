@@ -9,13 +9,13 @@ let resultN = parseInt(N);
 let resultM = parseInt(M);
 console.log('answer:', resultN);
 console.log('answer:', resultM);
-if(isNaN(N)===true){//проверка, является ли первое число числом
+if(isNaN(resultN)===true){//проверка, является ли первое число числом
     alert('the first value is not number'); 
 }
-else if(isNaN(M)===true){//проверка, является ли второе число числом
+else if(isNaN(resultM)===true){//проверка, является ли второе число числом
     alert('the second value is not number');  
 }
-else if(N>M){//проверяем не больше ли первое чило второго числа
+else if(resultN>resultM){//проверяем не больше ли первое чило второго числа
     alert('the first number bigger than the second number');
     }
     else{
