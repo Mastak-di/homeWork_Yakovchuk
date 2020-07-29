@@ -1,12 +1,14 @@
-//#1
-function degree(number, n) {
+//1.функция которая находит степень числа
+function findDegree(number, n) {
     let num = number;
     for (let i = 1; i < n; i++) {
         num *= number;
     }
     return num;
 }
-//#2
+
+
+//2.функция которая выводит чистую сумму выплат, после вычитания налога
 function cleenMoney(money, procent){
     const allProcent= 100;
     let res;
@@ -15,25 +17,32 @@ function cleenMoney(money, procent){
   cleenRes=money-res;
     return cleenRes;
 }
-//#3
-function big(){
+
+
+//3.функция которая выводит первую большую букву, остальные маленькие
+function replacementLetter(){
     let name =prompt('enter name');
     let firstLetter =name[0];
     let word =name.substr(1);
     console.log(firstLetter.toUpperCase()+word.toLowerCase());
   }
-  //#4
-  function random(min, max) {
+
+
+  //4.функция нахождения рандомного числа от min до max
+  function randomNumber(min, max) {
     let number = Math.floor(Math.random()* (max - min)) + min;
       return number;
     }
-    //#5
+
+
+    //5.функция рандомного вывода восьмизначного пароля
     function randomPassword(a, b) {
         let password = Math.floor(Math.random()* (a - b)) + b;
           return password;
         }
-    }
-    //#6
+    
+
+    //6.функция конвертации доллара в гривну и наоборот
     function convertMoney(uah, $){
         const exchange = 27.80;
           let sum=0;
@@ -48,15 +57,16 @@ function big(){
           }
         }
 
-//task#1
-console.log(degree(3, 3));
-//task#2
+
+//функция 1
+console.log(findDegree(3, 3));
+//функция 2
 console.log(cleenMoney(3000, 19.5));
-//task#3
-big();
-//task#4
-console.log(number(1, 100));
-//task#5
+//функция 3
+replacementLetter();
+//функция 4
+console.log(randomNumber(1, 100));
+//функция 5
 console.log(randomPassword(10000000, 99999999));
-//task#6
+//функция 6
 convertMoney(1000, 500);
