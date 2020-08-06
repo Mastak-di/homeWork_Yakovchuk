@@ -43,19 +43,25 @@ function replacementLetter(){
     
 
     //6.функция конвертации доллара в гривну и наоборот
-    function convertMoney(uah, $){
-        const exchange = 27.80;
-          let sum=0;
-          let answer = confirm('if you want conver dollar in grivna, click ok');
-          if(answer===true){
-            sum=$*exchange;
-            console.log(sum);
-          }
-            else{
-            sum=uah/exchange;
-              console.log(sum);
-          }
-        }
+    function moneyCovert(){
+      let covert;
+     const kurs = 27.80;
+       let answer =prompt('enter the amount of money and currency to convert');
+      
+       if(answer.indexOf("uah") != -1){
+        let newUah = answer.replace(/\D/g,'');
+        covert = newUah/kurs;
+       }
+       else if(answer.indexOf("$") != -1){
+        let new$ = answer.replace(/\D/g,'');
+        covert = new$*kurs;
+       }
+       else{
+         covert ="Sorry! This covert only uah and $";
+       }
+        return covert;
+     }
+     
 
 
 //функция 1
@@ -69,4 +75,4 @@ console.log(randomNumber(1, 100));
 //функция 5
 console.log(randomPassword(10000000, 99999999));
 //функция 6
-convertMoney(1000, 500);
+console.log(moneyCovert());
