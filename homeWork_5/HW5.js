@@ -55,7 +55,7 @@ function divideByThree(word){
       cutWord = word.toLowerCase();
     }
     else{
-      cutWord = word.match(/.{1,3}/g); 
+      cutWord = word.toLowerCase().match(/.{1,3}/g); 
     }
   return cutWord;
 }
