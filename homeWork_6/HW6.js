@@ -18,8 +18,8 @@ const students = [{
    // name: "Anton",
     course: 2,
     subjects: {
-      statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],
-      english: [5, 3],
+      statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5], // это массив чисел
+      /*english: [5, 3],
       cosmology: [5, 5, 5, 5]
     }
-  }];
+  }];*/
