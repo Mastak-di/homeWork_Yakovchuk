@@ -15,7 +15,7 @@ const students = [{
       geometry: [5, 5, 2, 3, 5]
     }
   }, {
-    name: "Anton",
+   // name: "Anton",
     course: 2,
     subjects: {
       statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],
